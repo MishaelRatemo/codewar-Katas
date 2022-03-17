@@ -16,12 +16,23 @@ printer_error(s) => "0/14"
 s="aaaxbbbbyyhwawiwjjjwwm"
 printer_error(s) => "8/22"
 '''
+#BDD
+# anaylize the error 
+# return an error in a fraction of the 
+#Pesuodcode
+#>>>initialize the errors
+#>>> fint the length of the string
+#>> loop tthough the string given
+#>> test if the letters in the string are going beyond thelast letter and do an increament of the errors found
+#>>  then convert the errors in a string 
+#>> and the count into a string 
+#>> return a fraction to represent the error rate
 
 def printer_error(s):
     errors = 0
     count = len(s)
-    for i in s:
-        if i > "m":
+    for lett in s:
+        if lett > "m":
             errors += 1
     return str(errors) + "/" + str(count)
 
